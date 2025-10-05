@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-cp "$0" /mnt/tmp/
+wget https://raw.githubusercontent.com/somebodykot/lmde_encryption_mirror/refs/heads/main/grub-install /mnt/tmp/
 # Chroot 
 mount --bind /dev /mnt/dev/
 mount --bind /dev/pts /mnt/dev/pts
@@ -11,7 +11,7 @@ mount --bind /run  /mnt/run
 # Internet resolv
 mount --bind /etc/resolv.conf /mnt/etc/resolv.conf
 
-echo "After chroot, enter command: cd /tmp; bash grub.sh 1"
+echo "After chroot, enter command: cd /tmp; bash grub-install 1"
 chroot /mnt
 
 if [ "$1" == 1 ] ; then
