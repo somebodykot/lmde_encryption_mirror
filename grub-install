@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-wget https://raw.githubusercontent.com/somebodykot/lmde_encryption_mirror/refs/heads/main/grub-install /mnt/tmp/
+wget -O /mnt/tmp/ https://raw.githubusercontent.com/somebodykot/lmde_encryption_mirror/refs/heads/main/grub-install 
 # Chroot 
 mount --bind /dev /mnt/dev/
 mount --bind /dev/pts /mnt/dev/pts
