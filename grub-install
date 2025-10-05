@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-mkdir /mnt/tmp/grub/
-cp "$0" /mnt/tmp/grub/
+cp "$0" /mnt/tmp/
 # Chroot 
 mount --bind /dev /mnt/dev/
 mount --bind /dev/pts /mnt/dev/pts
