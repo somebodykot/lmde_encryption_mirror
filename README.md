@@ -155,10 +155,11 @@
   UUID=id                                     /           ext4    defaults     0   1
   UUID=id                                     swap        swap    defaults     0   2
   ```
+  ```
   a. EFI раздел (Пример: /dev/sda1).
   b. Раздел / (Пример: /dev/vg/root).
   d. Swap раздел (Пример: /dev/vg/swap).
-
+  ```
  2. Initramfs. Ключи для рассшифровки.
  ```
  mkdir /etc/crypt.d/
