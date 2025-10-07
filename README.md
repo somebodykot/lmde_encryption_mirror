@@ -148,16 +148,16 @@
   Но тут важно указать правильно раздел с efi (Например, у меня efi на первом разделе     (/dev/sda1), значит я пишу -p 1. А если у вас efi на 2 (/dev/sda2), то пишите -p 2)
 
  ## Дополнительная настройка (Initramfs / fstab)
-  1. fstab. Создание.
+ 1. fstab. Создание.
   ```
   #### Static Filesystem Table File
   UUID=id                                     /boot/efi   vfat    defaults     0   1
   UUID=id                                     /           ext4    defaults     0   1
   UUID=id                                     swap        swap    defaults     0   2
   ```
-  1. EFI раздел (Пример: /dev/sda1).
-  2. Раздел / (Пример: /dev/vg/root).
-  3. Swap раздел (Пример: /dev/vg/swap).
+  a. EFI раздел (Пример: /dev/sda1).
+  b. Раздел / (Пример: /dev/vg/root).
+  d. Swap раздел (Пример: /dev/vg/swap).
 
  2. Initramfs. Ключи для рассшифровки.
  ```
