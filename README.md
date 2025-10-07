@@ -190,6 +190,7 @@
  update-initramfs -u
  grub-mkconfig -o /boot/grub/grub.cfg
  ```
+На этом установка подошла к концу, осталось помолится и перезагрузится. :>
 
 
 
