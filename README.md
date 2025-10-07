@@ -155,9 +155,9 @@
   UUID=id                                     /           ext4    defaults     0   1
   UUID=id                                     swap        swap    defaults     0   2
   ```
-  1" EFI раздел (Пример: /dev/sda1).
-  2" Раздел / (Пример: /dev/vg/root).
-  3" Swap раздел (Пример: /dev/vg/swap).
+  1. EFI раздел (Пример: /dev/sda1).
+  2. Раздел / (Пример: /dev/vg/root).
+  3. Swap раздел (Пример: /dev/vg/swap).
 
  2. Initramfs. Ключи для рассшифровки.
  ```
